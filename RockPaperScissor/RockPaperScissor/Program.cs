@@ -10,6 +10,9 @@ namespace RockPaperScissor
     {
         static void Main(string[] args)
         {
+            Game rpslsGame = new Game();
+            rpslsGame.RunGame();
+            Console.ReadLine();
         }
     }
 }
