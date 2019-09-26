@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissor
 {
-    class Player
+    abstract class Player
     {
         //member variables (Has A)
 
         public int score;
+        public string name;
+        public string move;
+        public abstract void ChooseMove();
+        public abstract void ChooseName();
 
         //constructor (Spawner)
         
@@ -21,10 +25,6 @@ namespace RockPaperScissor
 
         //member methods (Can Do)
 
-        public int HandMove(Move move, Random rng)
-        {
-            int shake = rng.Next(1, move.numberOfMoves + 1);
-            return shake;
-        }
+       
     }
 }
