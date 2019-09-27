@@ -8,9 +8,14 @@ namespace RockPaperScissor
 {
     public class Computer: Player
     {
+        public List<string> moves = new List<string>() { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
         public override void ChooseMove()
         {
-            throw new NotImplementedException();
+
+            
+            Random rnd = new Random();
+            int randomNum = rnd.Next(4);
+            move = moves[randomNum];
         }
 
         public override void ChooseName()

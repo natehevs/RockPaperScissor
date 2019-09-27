@@ -35,6 +35,10 @@ namespace RockPaperScissor
         //member methods (Can Do)
         public void RunGame()
         {
+            /*            Player test= new Computer();
+                        int testmove = test.ChooseMove();
+                        Console.WriteLine("Testing random number" + testmove);*/
+            DisplayRules();
             int numberOfPlayers = GetNumberOfPlayers();
             CreatePlayers(numberOfPlayers);
             playerOne.ChooseMove();
@@ -80,18 +84,17 @@ namespace RockPaperScissor
 
         public void DisplayHandMoveOptions()
         {
-            Console.WriteLine("Please select a move. 1=Rock, 2=Paper, 3=Scissors, 4=Lizard, 5=Spock");
+           
         }
 
         public void DisplayHandMove()
         {
-            IList<Move> MoveList = new List<Move>() {
-                new Move(){ MoveID=1, MoveName="Rock"},
-                new Move(){ MoveID=2, MoveName="Paper"},
-                new Move(){ MoveID=3, MoveName="Scissors"},
-                new Move(){ MoveID=4, MoveName="Lizard"},
-                new Move(){ MoveID=5, MoveName="Spock"},
-            };
+            
+        }
+
+        public void CompareHandMove()
+        {
+
         }
 
         public void DisplayGameWinner()

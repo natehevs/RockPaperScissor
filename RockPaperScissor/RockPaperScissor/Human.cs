@@ -10,13 +10,11 @@ namespace RockPaperScissor
     {
         //memb er variables (Has A)
 
-        private new string move;
-
         //constructor (Spawner)
 
         public override void ChooseMove()
         {
-            Console.WriteLine("Choose a move.");
+            Console.WriteLine("Please select a move. Rock, Paper, Scissors, Lizard, Spock");
             move = Console.ReadLine();
         }
         public override void ChooseName()
