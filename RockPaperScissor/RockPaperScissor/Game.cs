@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissor
 {
-    class Game
+    public class Game
     {
         //1. display rules
         //2. how many players
@@ -26,8 +26,8 @@ namespace RockPaperScissor
         //constructor (Spawner)
         public Game()
         {
-            playerOne = new Player();
-            playerTwo = new Player();
+            playerOne = new Human();
+            playerTwo = new Computer();
             move = new Move();
             rng = new Random();
         }
@@ -44,11 +44,11 @@ namespace RockPaperScissor
         public int GetNumberOfPlayers()
         {
             Console.WriteLine("How many players are competing?");
-            int numberOfPlayers = int.Parse(Console.ReadLine);
+            int numberOfPlayers = int.Parse(Console.ReadLine());
             return numberOfPlayers;
         }
 
-        abstract public void CreatePlayers(int numberOfPlayers)
+        public void CreatePlayers(int numberOfPlayers)
         {
             if(numberOfPlayers == 1)
             {

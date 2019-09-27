@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissor
 {
-    abstract class Human
+    public class Human: Player
     {
         //memb er variables (Has A)
 
-        string move;
+        private new string move;
 
         //constructor (Spawner)
 
@@ -18,6 +18,10 @@ namespace RockPaperScissor
         {
             Console.WriteLine("Choose a move.");
             move = Console.ReadLine();
+        }
+        public override void ChooseName()
+        {
+
         }
 
         //member methods (Can Do)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissor
 {
-    class Move
+    public class Move
     {
         //memb er variables (Has A)
 

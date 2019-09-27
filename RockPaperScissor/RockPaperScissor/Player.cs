@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissor
 {
-    abstract class Player
+    public abstract class Player
     {
         //member variables (Has A)
 

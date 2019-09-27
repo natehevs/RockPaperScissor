@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissor
 {
-    class Computer
+    public class Computer: Player
     {
+        public override void ChooseMove()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void ChooseName()
+        {
+            throw new NotImplementedException();
+        }
+
         //memb er variables (Has A)
 
 
