@@ -17,8 +17,14 @@ namespace RockPaperScissor
         public Move()
         {
             numberOfMoves = 5;
+            Random rnd = new Random();
+            int MoveID = rnd.Next(1, 6);
         }
 
+        public int MoveID { get; internal set; }
+        public string MoveName { get; internal set; }
+
         //member methods (Can Do)
+
     }
 }

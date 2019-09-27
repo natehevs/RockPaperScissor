@@ -13,6 +13,7 @@ namespace RockPaperScissor
         public int score;
         public string name;
         public string move;
+        public List<string> Gestures = new List<string>() { "Rock", "Paper", "Scissors","Lizard", "Spock" };
         public abstract void ChooseMove();
         public abstract void ChooseName();
 
